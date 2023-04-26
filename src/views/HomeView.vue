@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 import * as THREE from 'three';
 
 const scene = new THREE.Scene();
@@ -9,7 +9,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 const geometry = new THREE.BoxGeometry( 2, 1, 5 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const material = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
